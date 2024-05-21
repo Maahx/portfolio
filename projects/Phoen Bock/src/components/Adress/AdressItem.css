@@ -1,0 +1,103 @@
+.adress-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lavender;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 50px;
+} 
+
+.adress-item__description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.adress-galaxy {
+  display: flex;
+  flex-direction: column;
+  width: 9.5rem;
+  height: 3.5rem;
+  border: 2px solid black;
+  background-color: lavender;
+  color: black;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.adress-item h1 {
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: black;
+}
+
+.adress-item h2 {
+  color: #3a3a3a;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: black;
+}
+
+.adress-item__number {
+  font-size: 1rem;
+  color: black;
+  background-color: lavender;
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 50px;
+}
+
+.delete {
+  background-color: lavender;
+  width: 6.5rem;
+  height: 2.5rem;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.delete:hover,
+.delete:active{
+  background-color: rgb(241, 56, 56);
+  border-color: rgb(241, 56, 56);
+}
+
+.delete.alternative{
+  color: #220131;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.delete.alternative:hover,
+.delete.alternative:hover{
+  background-color: #ddb3f8;
+}
+
+@media (min-width: 580px) {
+  .adress-item__description {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .adress-item__description h2 {
+    font-size: 1.25rem;
+  }
+
+  .adress-item__price {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
